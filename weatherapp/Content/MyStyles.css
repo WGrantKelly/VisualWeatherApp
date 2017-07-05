@@ -1,0 +1,17 @@
+﻿body {
+}
+
+
+/*THINGS i ADDED*/
+
+#uppercase {
+        text-transform: uppercase;
+}
+#removedate {
+        text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+            .container {
+        min-width: 1600px;
+        }
+        }

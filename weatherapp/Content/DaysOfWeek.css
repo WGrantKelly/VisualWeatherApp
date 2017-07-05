@@ -1,0 +1,20 @@
+﻿#container {
+    width:100%;
+    text-align:left;
+}
+
+#left {
+    float:left;
+    width:300px;
+}
+
+#center {
+    display: inline-block;
+    margin:0 auto;
+    width:300px;
+}
+
+#right {
+    float:right;
+    width:300px;
+}

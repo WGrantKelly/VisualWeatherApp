@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Forecast";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="container">
+        <div style="position: absolute; background-color:pink; height: 3px; width: 800px; left: 450px; top: 88px;">
+        </div>
+        <div class="row" style = " height: 250px;">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        @Model.SunRise | <img src="~/Images/cartoon-sun-vector-art2.png" style="background-color: cadetblue;"/> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <DIV >
+                        <DIV class="text-center" id="uppercase" style="padding-left: 40px; letter-spacing:40px; color:white;">
+                            <h1>
+                                @Model.Location
+                            </h1>
+                        </DIV>
+                    </DIV>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="~/Images/moon.png" style="background-color: cadetblue;"/>  | @Model.SunSet
+                    </div>
+                </div>
+        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    
+                    <div class="text-center" style="color:white;">
+                        <h4>@Model.Time1Day</h4>
+                        @Model.Symbol1<br />
+                        Precipitation | @Model.Precipitation1<br />
+                        Wind Direction | @Model.WindDirection1<br />
+                        Wind speed | @Model.WindSpeed1<br />
+                        Temperature | @Model.Temperature1<br />
+                        Pressure | @Model.Pressure1<br />
+                        Humidity | @Model.Humidity1<br />
+                        Clouds | @Model.Cloud1
+                    </div>
+
+                </div>
+                
+                <div class="col-md-4" style="color:white;">
+                 
+                    <div class="text-center">
+                        <h4>@Model.Time2Day</h4>
+                        @Model.Symbol2<br />
+                        Precipitation | @Model.Precipitation2<br />
+                        Wind Direction | @Model.WindDirection2<br />
+                        Wind speed | @Model.WindSpeed2<br />
+                        Temperature | @Model.Temperature2<br />
+                        Pressure | @Model.Pressure2<br />
+                        Humidity | @Model.Humidity2<br />
+                        Clouds | @Model.Cloud2
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="text-center" style="color:white;">
+                        <h4>@Model.Time3Day</h4>
+                        @Model.Symbol3<br />
+                        Precipitation | @Model.Precipitation3<br />
+                        Wind Direction | @Model.WindDirection3<br />
+                        Wind speed | @Model.WindSpeed3<br />
+                        Temperature | @Model.Temperature3<br />
+                        Pressure | @Model.Pressure3<br />
+                        Humidity | @Model.Humidity3<br />
+                        Clouds | @Model.Cloud3
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row" style="height: 200px;">
+                <div class="col-md-4">
+                    <div class="text-center" style="height: 200px; padding-top: 50px;">
+                        <img src=@Model.BackImg1 />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center" style="height: 200px; padding-top: 50px;">
+                        <img src=@Model.BackImg2 />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center" style= "height: 200px; padding-top: 50px;">
+                        <img src=@Model.BackImg3 /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<weatherdata>
+	<location>
+		<name>Chicago</name>
+		<type></type>
+		<country>US</country>
+		<timezone></timezone>
+		<location altitude=\"0\" latitude=\"41.85\" longitude=\"-87.6501\" geobase=\"geonames\" geobaseid=\"4887398\"></location>
+	</location>
+	<credit></credit>
+	<meta>
+		<lastupdate></lastupdate>
+		<calctime>0.0092</calctime>
+		<nextupdate></nextupdate>
+	</meta>
+	<sun rise=\"2017-06-23T10:16:28\" set=\"2017-06-24T01:29:38\"></sun>
+	<forecast>
+		<time day=\"2017-06-23\">
+			<symbol number=\"803\" name=\"broken clouds\" var=\"04d\"></symbol>
+			<precipitation></precipitation>
+			<windDirection deg=\"344\" code=\"NNW\" name=\"North-northeast\"></windDirection>
+			<windSpeed mps=\"2.42\" name=\"Light breeze\"></windSpeed>
+			<temperature day=\"25.24\" min=\"18.11\" max=\"25.44\" night=\"18.11\" eve=\"23.37\" morn=\"25.44\"></temperature>
+			<pressure unit=\"hPa\" value=\"999\"></pressure>
+			<humidity value=\"91\" unit=\"%\"></humidity>
+			<clouds value=\"broken clouds\" all=\"56\" unit=\"%\"></clouds>
+		</time>
+		<time day=\"2017-06-24\">
+				<symbol number=\"802\" name=\"scattered clouds\" var=\"03d\"></symbol>
+			<precipitation></precipitation>
+			<windDirection deg=\"284\" code=\"WNW\" name=\"West-northwest\"></windDirection>
+			<windSpeed mps=\"4.4\" name=\"Gentle Breeze\"></windSpeed>
+			<temperature day=\"19.94\" min=\"16.92\" max=\"20.58\" night=\"16.92\" eve=\"19.91\" morn=\"17.09\"></temperature
+			><pressure unit=\"hPa\" value=\"1006.8\"></pressure>
+			<humidity value=\"76\" unit=\"%\"></humidity>
+			<clouds value=\"scattered clouds\" all=\"48\" unit=\"%\"></clouds>
+		</time>
+		<time day=\"2017-06-25\">
+			<symbol number=\"500\" name=\"light rain\" var=\"10d\"></symbol>
+			<precipitation value=\"0.47\" type=\"rain\"></precipitation>
+			<windDirection deg=\"276\" code=\"W\" name=\"West\"></windDirection>
+			<windSpeed mps=\"5.21\" name=\"Gentle Breeze\"></windSpeed>
+			<temperature day=\"18.37\" min=\"14.73\" max=\"18.75\" night=\"16.54\" eve=\"18.27\" morn=\"14.73\"></temperature>
+			<pressure unit=\"hPa\" value=\"1008.2\"></pressure>
+			<humidity value=\"84\" unit=\"%\"></humidity>
+			<clouds value=\"broken clouds\" all=\"64\" unit=\"%\"></clouds>
+		</time>
+	</forecast>
+</weatherdata>

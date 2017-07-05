@@ -1,0 +1,43 @@
+﻿@{ViewBag.Title = "Weather"; }
+    <h1>
+        <link href="~/Content/Style.css" rel="stylesheet" type="text/css" />
+        <DIV style="position: absolute; top:300px; left:525px; width:800px; height:25px;letter-spacing:80px; z-index: 2;">WEATHER</DIV>
+    </h1>
+    <p>
+        <DIV style="position: absolute; top:350px; left:635px; width:800px; height:25px">serving every corner of the globe as long as the corner is a major city</DIV>
+
+    </p>
+    <p>
+        <DIV style="position: absolute; top:318px; left:250px; width:1200px; height:3px; background-color: pink; z-index: 1;"></DIV>
+    </p>
+    <p>
+        <DIV style="position: absolute; top:50px; left:80px; width:1580px; height:200px;">
+            <DIV style="position: absolute; top:10px; left:10px; width:300px; height:80px; ">
+                <img src="~/Images/Flower.png" />
+            </DIV>
+            <DIV style="position: absolute; top:10px; left:320px; width:300px; height:80px; ">
+                <img src="~/Images/Snow.png" />
+            </DIV>
+            <DIV style="position: absolute; top:10px; left:630px; width:300px; height:80px; ">
+                <img src="~/Images/Sun.png" />
+            </DIV>
+            <DIV style="position: absolute; top:10px; left:940px; width:300px; height:80px; ">
+                <img src="~/Images/storm.png" />
+            </DIV>
+            <DIV style="position: absolute; top:10px; left:1250px; width:300px; height:80px; ">
+                <img src="~/Images/Tree.png" />
+            </DIV>
+        </DIV>
+    </p>
+    <p>
+        <DIV style="position: absolute; top:450px; left:750px; width:250px; height: 50px;">
+
+    @model WeatherApp.Models.ForecastModel
+    @using (Html.BeginForm("Forecast", "Weather", FormMethod.Post))
+    { 
+        @Html.TextBoxFor(model => model.Location)
+        @Html.ValidationMessageFor(model => model.Location)
+        <button type="submit">Submit</button>
+    }
+    </DIV>
+    </p>
