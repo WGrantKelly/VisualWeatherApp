@@ -25,9 +25,12 @@ namespace WeatherApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/SMButtons.css",
+                      "~/Content/fontAwesome.css",
+                      //"~/Content/fontAwesomeMin.css",
                       "~/Content/MyStyles.css",
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/custom.css"));
         }
     }
 }
