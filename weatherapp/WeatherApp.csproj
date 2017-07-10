@@ -189,7 +189,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\custom.css" />
+    <Content Include="Content\ForecastCustom.css" />
+    <Content Include="Content\IndexCustom.css" />
     <Content Include="Content\DaysOfWeek.css" />
     <Content Include="Content\fontAwesome.css" />
     <Content Include="Content\fontAwesomeMin.css" />
@@ -234,6 +235,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="videos\Rain.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

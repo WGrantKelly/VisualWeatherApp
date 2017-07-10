@@ -2,31 +2,32 @@
     ViewBag.Title = "Weather";
     Layout = "~/Views/Shared/_Layout.cshtml";
 } 
-
+<video autoplay loop id="video-background" muted plays-inline>
+    <source src="~/videos/Rain.mp4" type="video/mp4">
+</video>
 <div class="row">
-        <div class="col-sm-1" style="color:white;">
-                @Model.SunRise | 
-        </div>
-    <div class="col-sm-2">
-        <img src="~/Images/cartoon-sun-vector-art2.png"/>
+    <div class="col-sm-1" style="color:white; padding-top: 25px; padding-left: 28px">
+        @Model.SunRise |
     </div>
-        <div class="col-sm-6">
-            <DIV >
-                       
-            </DIV>
+    <div class="col-sm-1">
+        <img src="~/Images/cartoon-sun-vector-art2.png" class="img-responsive">
+    </div>
+    <div class="col-sm-8" style="text-align: center; ">
+        <div id="uppercase" style="color:white; padding-top:25px; font-size: large;">
+            @Model.Location
         </div>
-        <div class="col-sm-2" >
-                <img src="~/Images/moon.png"/>
-        </div>
-    <div class="col-sm-1" style="color:white;">
+        
+    </div>
+    <div class="col-sm-1">
+        <img src="~/Images/moon.png" class="img-responsive">
+    </div>
+    <div class="col-sm-1" style="color:white;  padding-top: 25px;">
         | @Model.SunSet
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4">
-
-        <div class="text-center" style="color:white;">
-            <h4>@Model.Time1Day</h4>
+<div class="row" style="padding-top:100px;">
+    <div class="col-md-4" id="forecastBackground" style="color:white; ">
+            <h4 style="text-align:center;">@Model.Time1Day</h4>
             @Model.Symbol1<br />
             Precipitation | @Model.Precipitation1<br />
             Wind Direction | @Model.WindDirection1<br />
@@ -35,14 +36,10 @@
             Pressure | @Model.Pressure1<br />
             Humidity | @Model.Humidity1<br />
             Clouds | @Model.Cloud1
-        </div>
-
     </div>
 
-    <div class="col-md-4" style="color:white;">
-
-        <div class="text-center">
-            <h4>@Model.Time2Day</h4>
+    <div class="col-md-4" id="forecastBackground" style="color:white; text-align: center;">
+            <h4 style="text-align:center;">@Model.Time2Day</h4>
             @Model.Symbol2<br />
             Precipitation | @Model.Precipitation2<br />
             Wind Direction | @Model.WindDirection2<br />
@@ -51,13 +48,10 @@
             Pressure | @Model.Pressure2<br />
             Humidity | @Model.Humidity2<br />
             Clouds | @Model.Cloud2
-        </div>
     </div>
 
-    <div class="col-md-4">
-
-        <div class="text-center" style="color:white;">
-            <h4>@Model.Time3Day</h4>
+    <div class="col-md-4" id="forecastBackground" style="color:white; text-align:right;">
+            <h4 style="text-align:center;">@Model.Time3Day</h4>
             @Model.Symbol3<br />
             Precipitation | @Model.Precipitation3<br />
             Wind Direction | @Model.WindDirection3<br />
@@ -66,20 +60,66 @@
             Pressure | @Model.Pressure3<br />
             Humidity | @Model.Humidity3<br />
             Clouds | @Model.Cloud3
-        </div>
-
     </div>
 
 </div>
-<div class="row">
-    <div class="col-md-4">
+<div class="row" style="padding-top: 100px; padding-left: 75px; text-align: center;">
+    <div class="col-md-1">
             <img src=@Model.BackImg1 />
     </div>
     <div class="col-md-4">
+    </div>
+    <div class="col-md-1">
             <img src=@Model.BackImg2 />
     </div>
     <div class="col-md-4">
+    </div>
+    <div class="col-md-1">
             <img src=@Model.BackImg3 />
+    </div>
+</div>
+<div class="row" style="padding-top:100px;">
+    <div class="col-md-3">
+    </div>
+    <div class="col-sm-6" style=" text-align: center;">
+        <a class="btn btn-social-icon btn-facebook" style="border-radius: 50%; ">
+            <span class="fa fa-facebook"></span>
+        </a>
+        <a class="btn btn-social-icon btn-twitter" style="border-radius: 50%; ">
+            <span class="fa fa-twitter"></span>
+        </a>
+        <a class="btn btn-social-icon btn-instagram" style="border-radius: 50%;  ">
+            <span class="fa fa-instagram"></span>
+        </a>
+        <a class="btn btn-social-icon btn-google" style="border-radius: 50%;  ">
+            <span class="fa fa-google"></span>
+        </a>
+        <a class="btn btn-social-icon btn-adn" style="border-radius: 50%; ">
+            <span class="fa fa-adn"></span>
+        </a>
+        <a class="btn btn-social-icon btn-bitbucket" style="border-radius: 50%;  ">
+            <span class="fa fa-bitbucket"></span>
+        </a>
+        <a class="btn btn-social-icon btn-dropbox" style="border-radius: 50%;  ">
+            <span class="fa fa-dropbox"></span>
+        </a>
+        <a class="btn btn-social-icon btn-github" style="border-radius: 50%;  ">
+            <span class="fa fa-github"></span>
+        </a>
+        <a class="btn btn-social-icon btn-linkedin" style="border-radius: 50%;">
+            <span class="fa fa-linkedin"></span>
+        </a>
+        <a class="btn btn-social-icon btn-pinterest" style="border-radius: 50%;">
+            <span class="fa fa-pinterest"></span>
+        </a>
+        <a class="btn btn-social-icon btn-reddit" style="border-radius: 50%;">
+            <span class="fa fa-reddit"></span>
+        </a>
+        <a class="btn btn-social-icon btn-soundcloud" style="border-radius: 50%;">
+            <span class="fa fa-soundcloud"></span>
+        </a>
+    </div>
+    <div class="col-md-3">
     </div>
 </div>
 

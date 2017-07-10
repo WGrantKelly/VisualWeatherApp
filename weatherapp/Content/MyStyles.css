@@ -6,6 +6,7 @@
 
 #uppercase {
         text-transform: uppercase;
+        letter-spacing: 20px;
 }
 #removedate {
         text-transform: uppercase;
@@ -14,4 +15,9 @@
             .container {
         min-width: 1600px;
         }
+}
+#forecastBackground{
+    background-color: black;
+    opacity: .5;
+
 }

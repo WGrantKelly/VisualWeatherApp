@@ -30,7 +30,7 @@ namespace WeatherApp
                       "~/Content/MyStyles.css",
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/custom.css"));
+                      "~/Content/IndexCustom.css"));
         }
     }
 }

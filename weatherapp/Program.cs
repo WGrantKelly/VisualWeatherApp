@@ -81,10 +81,11 @@ namespace WeatherApp.Models
                 XmlAttributeCollection listCollection = list[dayIndex].Attributes;
                 foreach (XmlAttribute x in listCollection)
                 {
+                    if(x.Name.Equals("min")||x.Name.Equals("max"))
                     attributeMerger.Append(" " + x.Name + ": " + celciusToFareignheit(x.Value) + " ");
                 }
             }
-            if (attribute.Equals("precipitation"))
+            else if (attribute.Equals("precipitation"))
             {
                 XmlAttributeCollection listCollection = list[dayIndex].Attributes;
                 if(listCollection.Count.Equals(0))
@@ -95,12 +96,38 @@ namespace WeatherApp.Models
                 {
                     foreach (XmlAttribute x in listCollection)
                     {
-                        attributeMerger.Append(" " + x.Name + ": " + x.Value + " ");
+                        if(x.Name.Equals("type"))
+                        {
+                            attributeMerger.Append(x.Value + " ");
+                        }
                     }
                 }
             
             }
-
+            else if (attribute.Equals("pressure"))
+            {
+                XmlAttributeCollection listCollection = list[dayIndex].Attributes;
+                foreach (XmlAttribute x in listCollection)
+                {
+                    attributeMerger.Append(x.Value + " ");
+                }
+            }
+            else if (attribute.Equals("humidity"))
+            {
+                XmlAttributeCollection listCollection = list[dayIndex].Attributes;
+                foreach (XmlAttribute x in listCollection)
+                {
+                    attributeMerger.Append(x.Value + " ");
+                }
+            }
+            else if (attribute.Equals("clouds"))
+            {
+                XmlAttributeCollection listCollection = list[dayIndex].Attributes;
+                foreach (XmlAttribute x in listCollection)
+                {
+                        attributeMerger.Append(x.Value + " ");                 
+                }
+            }
             else if (list[0] != null)
             {
                 XmlAttributeCollection listCollection = list[dayIndex].Attributes;
