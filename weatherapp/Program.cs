@@ -16,6 +16,7 @@ namespace WeatherApp.Models
         {
             ForecastModel fCast = new ForecastModel();
             BackgroundImageGenerator bckrnd = new BackgroundImageGenerator();
+            BackgroundVideoGenerator vidGen = new BackgroundVideoGenerator(fCast);
             fCast.Location = location;
             fCast.LocationDetails = getDayIndexWeather(xmlDoc, fCast, "location", 1);
 
@@ -70,6 +71,9 @@ namespace WeatherApp.Models
                 bckrnd.set(fCast, 1);
                 bckrnd.set(fCast, 2);
                 bckrnd.set(fCast, 3);
+
+                vidGen.update();
+
             return fCast;
         }
         public string getDayIndexWeather(XmlDocument xmlDoc, ForecastModel model, String attribute, int dayIndex)

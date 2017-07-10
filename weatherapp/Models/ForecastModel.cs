@@ -79,6 +79,10 @@ namespace WeatherApp.Models
         public string BackImg2 { get; set; }
         [Required]
         public string BackImg3 { get; set; }
+        [Required]
+        public string forecastBackgroundVideo { get; set; }
+
+
 
     }
 }

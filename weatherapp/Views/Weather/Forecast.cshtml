@@ -2,8 +2,9 @@
     ViewBag.Title = "Weather";
     Layout = "~/Views/Shared/_Layout.cshtml";
 } 
+@model WeatherApp.Models.ForecastModel
 <video autoplay loop id="video-background" muted plays-inline>
-    <source src="~/videos/Rain.mp4" type="video/mp4">
+    <source src=@Model.forecastBackgroundVideo type="video/mp4">
 </video>
 <div class="row">
     <div class="col-sm-1" style="color:white; padding-top: 25px; padding-left: 28px">

@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="BackgroundImageGenerator.cs" />
+    <Compile Include="BackgroundVideoGenerator.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -235,7 +236,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="videos\Clouds.mp4" />
     <Content Include="videos\Rain.mp4" />
+    <Content Include="videos\Snow.mp4" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
