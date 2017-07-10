@@ -17,15 +17,18 @@ namespace WeatherApp
         {
             if(model.Precipitation1.Contains("rain")|| model.Precipitation1.Contains("storms"))
             {
-                model.forecastBackgroundVideo = "/videos/Rain.mp4";
+                model.forecastBackgroundVideoMP4 = "/videos/Rain.mp4";
+                model.forecastBackgroundVideoWEBM = "/videos/Rainwebm.webm";
             }
             else if (model.Precipitation1.Contains("None"))
             {
-                model.forecastBackgroundVideo = "/videos/Clouds.mp4";
+                model.forecastBackgroundVideoMP4 = "/videos/Clouds.mp4";
+                model.forecastBackgroundVideoWEBM = "/videos/Clouds.webm";
             }
             else if (model.Precipitation1.Contains("snow"))
             {
-                model.forecastBackgroundVideo = "/videos/Snow.mp4";
+                model.forecastBackgroundVideoMP4 = "/videos/Snow.mp4";
+                model.forecastBackgroundVideoWEBM = "/videos/Snow.webm";
             }
         }
     }

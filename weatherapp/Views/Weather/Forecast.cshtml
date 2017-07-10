@@ -3,9 +3,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 } 
 @model WeatherApp.Models.ForecastModel
-<video autoplay loop id="video-background" muted plays-inline>
-    <source src=@Model.forecastBackgroundVideo type="video/mp4">
+
+<video autoplay loop id="video-background" muted plays-inline controls>
+    <source src=@Model.forecastBackgroundVideoWEBM type="video/webm">
+    <source src=@Model.forecastBackgroundVideoMP4 type="video/mp4">
+    
 </video>
+
 <div class="row">
     <div class="col-sm-1" style="color:white; padding-top: 25px; padding-left: 28px">
         @Model.SunRise |
@@ -83,40 +87,37 @@
     <div class="col-md-3">
     </div>
     <div class="col-sm-6" style=" text-align: center;">
-        <a class="btn btn-social-icon btn-facebook" style="border-radius: 50%; ">
+        <a class="btn btn-social-icon btn-facebook" style="border-radius: 50%;" onclick="location.href='https://www.facebook.com/'">
             <span class="fa fa-facebook"></span>
         </a>
-        <a class="btn btn-social-icon btn-twitter" style="border-radius: 50%; ">
+        <a class="btn btn-social-icon btn-twitter" style="border-radius: 50%;" onclick="location.href='https://www.twitter.com/'">
             <span class="fa fa-twitter"></span>
         </a>
-        <a class="btn btn-social-icon btn-instagram" style="border-radius: 50%;  ">
+        <a class="btn btn-social-icon btn-instagram" style="border-radius: 50%;" onclick="location.href='https://www.instagram.com/'">
             <span class="fa fa-instagram"></span>
         </a>
-        <a class="btn btn-social-icon btn-google" style="border-radius: 50%;  ">
+        <a class="btn btn-social-icon btn-google" style="border-radius: 50%;" onclick="location.href='https://www.google.com/'">
             <span class="fa fa-google"></span>
         </a>
-        <a class="btn btn-social-icon btn-adn" style="border-radius: 50%; ">
-            <span class="fa fa-adn"></span>
-        </a>
-        <a class="btn btn-social-icon btn-bitbucket" style="border-radius: 50%;  ">
+        <a class="btn btn-social-icon btn-bitbucket" style="border-radius: 50%;" onclick="location.href='https://www.bitbucket.com/'">
             <span class="fa fa-bitbucket"></span>
         </a>
-        <a class="btn btn-social-icon btn-dropbox" style="border-radius: 50%;  ">
+        <a class="btn btn-social-icon btn-dropbox" style="border-radius: 50%;" onclick="location.href='https://www.dropbox.com/'">
             <span class="fa fa-dropbox"></span>
         </a>
-        <a class="btn btn-social-icon btn-github" style="border-radius: 50%;  ">
+        <a class="btn btn-social-icon btn-github" style="border-radius: 50%;" onclick="location.href='https://www.github.com/'">
             <span class="fa fa-github"></span>
         </a>
-        <a class="btn btn-social-icon btn-linkedin" style="border-radius: 50%;">
+        <a class="btn btn-social-icon btn-linkedin" style="border-radius: 50%;" onclick="location.href='https://www.linkedin.com/'">
             <span class="fa fa-linkedin"></span>
         </a>
-        <a class="btn btn-social-icon btn-pinterest" style="border-radius: 50%;">
+        <a class="btn btn-social-icon btn-pinterest" style="border-radius: 50%;" onclick="location.href='https://www.pinterest.com/'">
             <span class="fa fa-pinterest"></span>
         </a>
-        <a class="btn btn-social-icon btn-reddit" style="border-radius: 50%;">
+        <a class="btn btn-social-icon btn-reddit" style="border-radius: 50%;" onclick="location.href='https://www.reddit.com/'">
             <span class="fa fa-reddit"></span>
         </a>
-        <a class="btn btn-social-icon btn-soundcloud" style="border-radius: 50%;">
+        <a class="btn btn-social-icon btn-soundcloud" style="border-radius: 50%;" onclick="location.href='https://www.soundcloud.com/'">
             <span class="fa fa-soundcloud"></span>
         </a>
     </div>
