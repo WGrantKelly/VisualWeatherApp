@@ -3,6 +3,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Xml;
+using WeatherApp;
 using WeatherApp.Models;
 
 namespace MvcMovie.Controllers
@@ -15,7 +16,7 @@ namespace MvcMovie.Controllers
    
         public ActionResult Index()
         {
-            if (Request.Browser.IsMobileDevice)
+            if (IsMobile.isMobileBrowser())
             {
                 return View("MobileIndex");
             }
