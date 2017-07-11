@@ -15,7 +15,14 @@ namespace MvcMovie.Controllers
    
         public ActionResult Index()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return View("MobileIndex");
+            }
+            else
+            {
+                return View();
+            }
         }
         // 
         // GET: /Weather/Welcome/ 
@@ -33,11 +40,18 @@ namespace MvcMovie.Controllers
                 //get string form for reference 
                 WebClient web = new WebClient();
                 string stringForm = web.DownloadString(url);
-            //Console.WriteLine(stringForm);
-            ForecastModel forecast = prog.findAllAttributes(xmlDoc, location);
-                
+                //Console.WriteLine(stringForm);
+                ForecastModel forecast = prog.findAllAttributes(xmlDoc, location);
+
             //}
-            return View(forecast);
+            if (Request.Browser.IsMobileDevice)
+            {
+                return View("MobileForecast", forecast);
+            }
+            else
+            {
+                return View(forecast);
+            }
         }
     }
 }
