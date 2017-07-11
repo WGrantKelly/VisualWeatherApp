@@ -1,105 +1,103 @@
 ﻿@{
     ViewBag.Title = "Weather";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model WeatherApp.Models.ForecastModel
 
-<video autoplay loop id="video-background" muted plays-inline controls>
-    <source src=@Model.forecastBackgroundVideoWEBM type="video/webm">
-    <source src=@Model.forecastBackgroundVideoMP4 type="video/mp4">
+<head>
+    <link href="~/Content/StyleSheet1.css" rel="stylesheet" />
+</head> 
+<body>
+    @model WeatherApp.Models.ForecastModel
+    <video autoplay loop id="video-background" muted plays-inline controls>
+        <source src=@Model.forecastBackgroundVideoWEBM type="video/webm">
+        <source src=@Model.forecastBackgroundVideoMP4 type="video/mp4">
 
-</video>
+    </video>
 
-<div class="row">
+    <div class="row">
 
-    <div class="col-sm-12" style="text-align: center; ">
-        <div id="uppercase" style="color:white; padding-top:25px; font-size: large;">
-            @Model.Location
+        <div class="col-sm-12" style="text-align: center; ">
+            <div id="uppercase" style="color:white; padding-top:25px; font-size: large;">
+                @Model.Location
+            </div>
+
         </div>
 
     </div>
-
-</div>
-<div class="row" style="padding-top:25px;" id="forecastBackground">
-    <div class="col-md-12"  style="color:white; ">
-        <h4>@Model.Time1Day</h4>
-        @Model.Symbol1<br />
-        Precipitation | @Model.Precipitation1<br />
-        Wind Direction | @Model.WindDirection1<br />
-        Wind speed | @Model.WindSpeed1<br />
-        Temperature | @Model.Temperature1<br />
-        Pressure | @Model.Pressure1<br />
-        Humidity | @Model.Humidity1<br />
-        Clouds | @Model.Cloud1
+    <div class="row" style="padding-top:25px;" >
+        <div class="col-sm-12" style="color:white; " id="forecastBackground">
+            <h4>@Model.Time1Day</h4>
+            @Model.Symbol1<br />
+            Precipitation | @Model.Precipitation1<br />
+            Wind Direction | @Model.WindDirection1<br />
+            Wind speed | @Model.WindSpeed1<br />
+            Temperature | @Model.Temperature1<br />
+            Pressure | @Model.Pressure1<br />
+            Humidity | @Model.Humidity1<br />
+            Clouds | @Model.Cloud1
+        </div>
     </div>
-</div>
-<div class="row" style="padding-top:25px;" id="forecastBackground">
-    <div class="col-md-12" style="color:white; ">
-        <h4>@Model.Time2Day</h4>
-        @Model.Symbol2<br />
-        Precipitation | @Model.Precipitation2<br />
-        Wind Direction | @Model.WindDirection2<br />
-        Wind speed | @Model.WindSpeed2<br />
-        Temperature | @Model.Temperature2<br />
-        Pressure | @Model.Pressure2<br />
-        Humidity | @Model.Humidity2<br />
-        Clouds | @Model.Cloud2
+    <div class="row" style="padding-top:25px;" >
+        <div class="col-sm-12" style="color:white; " id="forecastBackground">
+            <h4>@Model.Time2Day</h4>
+            @Model.Symbol2<br />
+            Precipitation | @Model.Precipitation2<br />
+            Wind Direction | @Model.WindDirection2<br />
+            Wind speed | @Model.WindSpeed2<br />
+            Temperature | @Model.Temperature2<br />
+            Pressure | @Model.Pressure2<br />
+            Humidity | @Model.Humidity2<br />
+            Clouds | @Model.Cloud2
+        </div>
     </div>
-</div>
-<div class="row" style="padding-top:25px;" id="forecastBackground">
-    <div class="col-md-12" style="color:white; ">
-        <h4>@Model.Time3Day</h4>
-        @Model.Symbol3<br />
-        Precipitation | @Model.Precipitation3<br />
-        Wind Direction | @Model.WindDirection3<br />
-        Wind speed | @Model.WindSpeed3<br />
-        Temperature | @Model.Temperature3<br />
-        Pressure | @Model.Pressure3<br />
-        Humidity | @Model.Humidity3<br />
-        Clouds | @Model.Cloud3
+    <div class="row" style="padding-top:25px;" >
+        <div class="col-sm-12" style="color:white; " id="forecastBackground">
+            <h4>@Model.Time3Day</h4>
+            @Model.Symbol3<br />
+            Precipitation | @Model.Precipitation3<br />
+            Wind Direction | @Model.WindDirection3<br />
+            Wind speed | @Model.WindSpeed3<br />
+            Temperature | @Model.Temperature3<br />
+            Pressure | @Model.Pressure3<br />
+            Humidity | @Model.Humidity3<br />
+            Clouds | @Model.Cloud3
+        </div>
     </div>
-</div>
 
-<div class="row" style="padding-top:100px;">
-    <div class="col-sm-12" style=" text-align: center;">
-        <a class="btn btn-social-icon btn-facebook" style="border-radius: 50%;" onclick="location.href='https://www.facebook.com/'">
-            <span class="fa fa-facebook"></span>
-        </a>
-        <a class="btn btn-social-icon btn-twitter" style="border-radius: 50%;" onclick="location.href='https://www.twitter.com/'">
-            <span class="fa fa-twitter"></span>
-        </a>
-        <a class="btn btn-social-icon btn-instagram" style="border-radius: 50%;" onclick="location.href='https://www.instagram.com/'">
-            <span class="fa fa-instagram"></span>
-        </a>
-        <a class="btn btn-social-icon btn-google" style="border-radius: 50%;" onclick="location.href='https://www.google.com/'">
-            <span class="fa fa-google"></span>
-        </a>
-        <a class="btn btn-social-icon btn-bitbucket" style="border-radius: 50%;" onclick="location.href='https://www.bitbucket.com/'">
-            <span class="fa fa-bitbucket"></span>
-        </a>
-        <a class="btn btn-social-icon btn-dropbox" style="border-radius: 50%;" onclick="location.href='https://www.dropbox.com/'">
-            <span class="fa fa-dropbox"></span>
-        </a>
-        <a class="btn btn-social-icon btn-github" style="border-radius: 50%;" onclick="location.href='https://www.github.com/'">
-            <span class="fa fa-github"></span>
-        </a>
-        <a class="btn btn-social-icon btn-linkedin" style="border-radius: 50%;" onclick="location.href='https://www.linkedin.com/'">
-            <span class="fa fa-linkedin"></span>
-        </a>
-        <a class="btn btn-social-icon btn-pinterest" style="border-radius: 50%;" onclick="location.href='https://www.pinterest.com/'">
-            <span class="fa fa-pinterest"></span>
-        </a>
-        <a class="btn btn-social-icon btn-reddit" style="border-radius: 50%;" onclick="location.href='https://www.reddit.com/'">
-            <span class="fa fa-reddit"></span>
-        </a>
-        <a class="btn btn-social-icon btn-soundcloud" style="border-radius: 50%;" onclick="location.href='https://www.soundcloud.com/'">
-            <span class="fa fa-soundcloud"></span>
-        </a>
+    <div class="row" style="padding-top:50px; padding-bottom: 25px;">
+        <div class="col-sm-12" style=" text-align: center;">
+            <a class="btn btn-social-icon btn-facebook" style="border-radius: 50%;" onclick="location.href='https://www.facebook.com/'">
+                <span class="fa fa-facebook"></span>
+            </a>
+            <a class="btn btn-social-icon btn-twitter" style="border-radius: 50%;" onclick="location.href='https://www.twitter.com/'">
+                <span class="fa fa-twitter"></span>
+            </a>
+            <a class="btn btn-social-icon btn-instagram" style="border-radius: 50%;" onclick="location.href='https://www.instagram.com/'">
+                <span class="fa fa-instagram"></span>
+            </a>
+            <a class="btn btn-social-icon btn-google" style="border-radius: 50%;" onclick="location.href='https://www.google.com/'">
+                <span class="fa fa-google"></span>
+            </a>
+            <a class="btn btn-social-icon btn-bitbucket" style="border-radius: 50%;" onclick="location.href='https://www.bitbucket.com/'">
+                <span class="fa fa-bitbucket"></span>
+            </a>
+            <a class="btn btn-social-icon btn-dropbox" style="border-radius: 50%;" onclick="location.href='https://www.dropbox.com/'">
+                <span class="fa fa-dropbox"></span>
+            </a>
+            <a class="btn btn-social-icon btn-linkedin" style="border-radius: 50%;" onclick="location.href='https://www.linkedin.com/'">
+                <span class="fa fa-linkedin"></span>
+            </a>
+            <a class="btn btn-social-icon btn-pinterest" style="border-radius: 50%;" onclick="location.href='https://www.pinterest.com/'">
+                <span class="fa fa-pinterest"></span>
+            </a>
+            <a class="btn btn-social-icon btn-reddit" style="border-radius: 50%;" onclick="location.href='https://www.reddit.com/'">
+                <span class="fa fa-reddit"></span>
+            </a>
+            <a class="btn btn-social-icon btn-soundcloud" style="border-radius: 50%;" onclick="location.href='https://www.soundcloud.com/'">
+                <span class="fa fa-soundcloud"></span>
+            </a>
+        </div>
     </div>
-</div>
 
 
-
-
-
+</body>
 

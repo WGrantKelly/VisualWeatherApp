@@ -1,0 +1,30 @@
+﻿body {
+    /*max-height: 433px;
+    max-width: 1263px;
+    */
+    /*background-image: url(https://www.goodfreephotos.com/albums/united-states/colorado/other-colorado/beautiful-landscape-and-skies-red-cliff-colorado.jpg);*/
+    /*min-height: 100%;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url('../Images/indexPageMobile.png');
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+img {
+    text-align: center;
+    height: 100%;
+}
+
+#video-background {
+    /*  making the video fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}

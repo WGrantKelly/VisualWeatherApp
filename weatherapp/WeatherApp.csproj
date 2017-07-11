@@ -214,6 +214,7 @@
     <Content Include="Content\fontAwesomeMin.css" />
     <Content Include="Content\MyStyles.css" />
     <Content Include="Content\SMButtons.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -222,6 +223,7 @@
     <Content Include="Images\beautiful-landscape-and-skies-red-cliff-colorado.jpg" />
     <Content Include="Images\cartoon-sun-vector-art2.png" />
     <Content Include="Images\Flower.png" />
+    <Content Include="Images\indexPageMobile.png" />
     <Content Include="Images\moon.png" />
     <Content Include="Images\Snow.png" />
     <Content Include="Images\storm.png" />
