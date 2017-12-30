@@ -245,6 +245,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="App_Data\51Degrees.dat" />
     <Content Include="51Degrees.config" />
+    <None Include="Properties\PublishProfiles\HomeWeatherHub - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Weatherhub - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
